@@ -1,7 +1,13 @@
+import SidebarLogo from "./SidebarLogo";
+
 function Sidebar() {
   return (
-    <aside className="w-72 h-screen bg-white border-r border-slate-200 flex flex-col">
-      Sidebar
+    <aside className="flex h-screen w-72 flex-col border-r border-slate-200 bg-white">
+      <SidebarLogo />
+
+      <div className="flex-1 p-6">
+        Navigation
+      </div>
     </aside>
   );
 }
