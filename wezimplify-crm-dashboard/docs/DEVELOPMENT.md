@@ -36,3 +36,14 @@ Next Feature
 ### Why
 
 A component-based layout makes the application easier to maintain and extend. It also allows individual sections to be developed independently.
+
+
+## Feature: Sidebar
+
+### Goal
+
+Create a reusable sidebar navigation based on configuration data instead of hardcoded JSX.
+
+### Reason
+
+Separating navigation data from UI makes the sidebar easier to maintain and extend in the future.
