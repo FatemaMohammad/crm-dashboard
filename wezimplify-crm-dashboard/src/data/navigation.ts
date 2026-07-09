@@ -2,13 +2,27 @@ import {
   LayoutDashboard,
   Users,
   FolderKanban,
-  MessageCircle,
+  Headset,
+  ContactRound,
+  FileText,
+  CreditCard,
   Settings,
+  type LucideIcon,
 } from "lucide-react";
 
-export const navigation = [
+export interface NavigationItem {
+  label: string;
+  icon: LucideIcon;
+}
+
+export interface NavigationSection {
+  title: string;
+  items: NavigationItem[];
+}
+
+export const navigation: NavigationSection[] = [
   {
-    title: "Main",
+    title: "MAIN",
     items: [
       {
         label: "Dashboard",
@@ -24,12 +38,29 @@ export const navigation = [
       },
       {
         label: "Support",
-        icon: MessageCircle,
+        icon: Headset,
       },
     ],
   },
   {
-    title: "Settings",
+    title: "CRM",
+    items: [
+      {
+        label: "Contacts",
+        icon: ContactRound,
+      },
+      {
+        label: "Documents",
+        icon: FileText,
+      },
+      {
+        label: "Subscriptions",
+        icon: CreditCard,
+      },
+    ],
+  },
+  {
+    title: "SYSTEM",
     items: [
       {
         label: "Settings",
