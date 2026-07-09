@@ -1,13 +1,18 @@
-import './App.css'
+import Sidebar from "./components/layout/Sidebar";
+import Header from "./components/layout/Header";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <main className="min-h-screen bg-slate-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-slate-900">
-        WeZimplify CRM Dashboard
-      </h1>
-    </main>
-  )
+    <div className="min-h-screen bg-slate-100 flex">
+      <Sidebar />
+
+      <div className="flex flex-1 flex-col">
+        <Header />
+        <Dashboard />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
