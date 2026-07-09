@@ -47,3 +47,16 @@ Create a reusable sidebar navigation based on configuration data instead of hard
 ### Reason
 
 Separating navigation data from UI makes the sidebar easier to maintain and extend in the future.
+
+
+## Feature: Sidebar Branding
+
+### Completed
+
+- Created reusable SidebarLogo component
+- Added company branding section
+- Separated branding from sidebar layout
+
+### Why
+
+Separating the logo into its own component improves maintainability and keeps the Sidebar focused on layout.
