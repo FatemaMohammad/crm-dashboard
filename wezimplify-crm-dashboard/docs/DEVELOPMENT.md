@@ -75,3 +75,14 @@ Separating the logo into its own component improves maintainability and keeps th
 ### Why
 
 Building reusable UI components improves consistency across the dashboard and reduces duplicated code.
+
+## Feature: Sidebar Branding
+
+### Completed
+
+- Replaced the placeholder "W" logo with a custom Share2 icon
+- Updated the sidebar branding to better match the CRM concept
+
+### Why
+
+The Share2 icon better communicates relationships, connectivity and collaboration, which are central concepts in a CRM platform. Using an SVG icon from the same icon library also ensures visual consistency throughout the application.
