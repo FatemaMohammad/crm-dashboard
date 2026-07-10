@@ -6,9 +6,9 @@
 - [x] Setup React + TypeScript with Vite
 - [x] Configure Tailwind CSS
 - [x] Create project structure
-- [ ] Build dashboard layout
-- [ ] Create sidebar
-- [ ] Create header
+- [x] Build dashboard layout
+- [x] Create sidebar
+- [x] Create header
 - [ ] Build KPI cards
 - [ ] Add project progress section
 - [ ] Add activity feed
