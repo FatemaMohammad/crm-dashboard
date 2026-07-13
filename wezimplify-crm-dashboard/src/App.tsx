@@ -4,10 +4,10 @@ import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-100 flex">
+    <div className="h-screen overflow-hidden bg-slate-100 flex">
       <Sidebar />
 
-      <div className="flex flex-1 flex-col">
+      <div className="flex min-h-0 flex-1 flex-col">
         <Header />
         <Dashboard />
       </div>
