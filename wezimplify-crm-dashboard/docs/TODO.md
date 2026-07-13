@@ -9,10 +9,10 @@
 - [x] Build dashboard layout
 - [x] Create sidebar
 - [x] Create header
-- [ ] Build KPI cards
-- [ ] Add project progress section
-- [ ] Add activity feed
-- [ ] Add tasks section
-- [ ] Responsive layout
+- [x] Build KPI cards
+- [x] Add project progress section
+- [x] Add activity feed
+- [x] Add tasks section
+- [x] Responsive layout
 - [ ] Improve accessibility
 - [ ] Final README
