@@ -14,11 +14,9 @@ const statusConfig: Record<ProjectStatus, { label: string; badge: BadgeVariant; 
 function ProjectProgress() {
   return (
     <Card>
-      <div className="mb-5 flex items-center justify-between">
-        <div>
-          <h3 className="text-base font-semibold text-slate-900">Project Progress</h3>
-          <p className="text-sm text-slate-500">Active projects and delivery status</p>
-        </div>
+      <div className="mb-5">
+        <h3 className="text-base font-semibold text-slate-900">Project Progress</h3>
+        <p className="text-sm text-slate-500">Active projects and delivery status</p>
       </div>
 
       <div className="flex flex-col gap-5">
