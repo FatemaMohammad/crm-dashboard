@@ -9,7 +9,8 @@
 
 ## Border Radius
 
-12px
+- Cards (page-level containers): 16px
+- Buttons, inputs, icons, list items: 12px
 
 ## Shadow
 

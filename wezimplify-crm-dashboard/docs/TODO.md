@@ -15,4 +15,4 @@
 - [x] Add tasks section
 - [x] Responsive layout
 - [ ] Improve accessibility
-- [ ] Final README
+- [x] Final README

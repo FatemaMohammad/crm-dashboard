@@ -1,75 +1,45 @@
-# React + TypeScript + Vite
+# WeZimplify CRM Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A CRM dashboard UI built with React, TypeScript, and Tailwind CSS. It gives a quick overview of KPIs, project progress, tasks, top customers, and recent team activity behind a fixed sidebar/header shell.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS 4
+- lucide-react (icons)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Other scripts:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run build     # type-check and build for production
+npm run lint       # run ESLint
+npm run preview    # preview the production build locally
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
 
 ```
+src/
+  components/
+    common/     # Card, Badge, Avatar, ProgressBar - shared building blocks
+    layout/     # Sidebar, SidebarSection, SidebarItem, SidebarLogo, Header
+    dashboard/  # StatCard, ProjectProgress, TaskList, CustomerOverview, ActivityFeed
+  data/         # Mock data for stats, projects, tasks, customers, activity, navigation
+  pages/        # Dashboard page composing the dashboard sections
+  App.tsx       # App shell: fixed sidebar + header, scrollable content area
+```
+
+## Documentation
+
+- [docs/DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md) - why the app is structured and styled the way it is
+- [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md) - design tokens (spacing, radius, color, typography)
+- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - development log by feature
+- [docs/TODO.md](docs/TODO.md) - project progress checklist
