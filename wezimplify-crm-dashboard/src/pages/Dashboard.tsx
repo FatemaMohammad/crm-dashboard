@@ -21,10 +21,8 @@ function Dashboard() {
         <TaskList />
       </section>
 
-      <section className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <CustomerOverview />
-        </div>
+      <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <CustomerOverview />
         <ActivityFeed />
       </section>
     </main>
