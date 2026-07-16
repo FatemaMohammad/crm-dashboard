@@ -34,4 +34,4 @@ White
 
 ## Typography
 
-Inter
+System default sans-serif (Tailwind's default `font-sans` stack) — no custom font imported
