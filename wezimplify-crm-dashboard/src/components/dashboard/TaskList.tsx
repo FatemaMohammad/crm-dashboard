@@ -32,6 +32,8 @@ function TaskList() {
           <li key={task.id}>
             <button
               type="button"
+              role="checkbox"
+              aria-checked={task.done}
               onClick={() => toggleTask(task.id)}
               className="flex w-full items-center gap-3 rounded-xl px-2 py-2.5 text-left hover:bg-slate-50"
             >

@@ -14,5 +14,5 @@
 - [x] Add activity feed
 - [x] Add tasks section
 - [x] Responsive layout
-- [ ] Improve accessibility
+- [x] Improve accessibility
 - [x] Final README
