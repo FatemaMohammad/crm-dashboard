@@ -1,14 +1,29 @@
-import { Bell, Search } from "lucide-react";
+import { Bell, Menu, Search } from "lucide-react";
 import Avatar from "../common/Avatar";
 
-function Header() {
+interface HeaderProps {
+  onMenuClick: () => void;
+}
+
+function Header({ onMenuClick }: HeaderProps) {
   return (
-    <header className="flex items-center justify-between border-b border-slate-200 bg-white px-8 py-4">
-      <div>
-        <h2 className="text-xl font-semibold text-slate-900">Dashboard</h2>
-        <p className="text-sm text-slate-500">
-          Welcome back, here's what's happening today.
-        </p>
+    <header className="flex items-center justify-between border-b border-slate-200 bg-white px-4 py-4 sm:px-8">
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          aria-label="Open menu"
+          onClick={onMenuClick}
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50 lg:hidden"
+        >
+          <Menu size={18} />
+        </button>
+
+        <div>
+          <h2 className="text-xl font-semibold text-slate-900">Dashboard</h2>
+          <p className="hidden text-sm text-slate-500 sm:block">
+            Welcome back, here's what's happening today.
+          </p>
+        </div>
       </div>
 
       <div className="flex items-center gap-4">
