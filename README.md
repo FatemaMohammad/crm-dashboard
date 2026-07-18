@@ -2,6 +2,26 @@
 
 A CRM dashboard UI built with React, TypeScript, and Tailwind CSS. It provides a quick overview of KPIs, project progress, tasks, top customers, and recent team activity through a responsive dashboard layout.
 
+## Dashboard Preview 
+
+### Overview
+
+![Dashboard Overview](docs/images/Screenshot_1.jpeg)
+
+
+### Project Progress & Tasks
+
+![Dashboard Details](docs/images/Screenshot_2.jpeg)
+
+
+## Responsive Design
+
+### Mobil Hamburger Menu
+![Mobil](docs/images/Screenshot_Mobil1.jpeg)
+### Mobil Details
+![Mobil](docs/images/Screenshot_Mobil_2.jpeg)
+![Mobil](docs/images/Screenshot_Mobil_3.jpeg)
+
 ## Tech Stack
 
 - React 19 + TypeScript
