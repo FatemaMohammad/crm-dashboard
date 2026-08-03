@@ -62,4 +62,4 @@ src/
 - [docs/DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md) - why the app is structured and styled the way it is
 - [docs/UI_GUIDELINES.md](docs/UI_GUIDELINES.md) - design tokens (spacing, radius, color, typography)
 - [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) - development log by feature
-- [docs/TODO.md](docs/TODO.md) - project progress checklist
+
