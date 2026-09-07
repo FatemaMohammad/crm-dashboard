@@ -1,4 +1,4 @@
-# WeZimplify CRM Dashboard
+# CRM Dashboard
 
 A CRM dashboard UI built with React, TypeScript, and Tailwind CSS. It provides a quick overview of KPIs, project progress, tasks, top customers, and recent team activity through a responsive dashboard layout.
 

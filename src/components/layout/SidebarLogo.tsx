@@ -9,7 +9,7 @@ function SidebarLogo() {
 
       <div>
         <h1 className="text-lg font-bold text-slate-900">
-          WeZimplify
+          CRM
         </h1>
 
         <p className="text-sm text-slate-500">
